@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd ./functions/ && npm install && npm run build && cd..
+      - run: cd ./functions/ && npm install && npm run build
       - name: install firebase
         run: npm i firebase-tools -g  
       - name: deploy
